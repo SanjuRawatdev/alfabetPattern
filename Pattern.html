@@ -1,0 +1,1235 @@
+<!-- 1.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=1;j<=5;j++) 
+     {
+ document.write("*");
+ }
+   document.write("</br>");
+ }
+</script>
+</body>
+</html>
+
+<!-- Output -->
+*****
+*****
+*****
+*****
+*****
+<!-- 2.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=1;j<=i;j++) 
+     {
+ document.write("*");
+ }
+   document.write("</br>");
+ }
+</script>
+</body>
+</html>
+
+<!-- Output -->
+*
+**
+***
+****
+*****
+
+<!-- 3.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=1;j<=i;j++) 
+     {
+ document.write(i);
+ }
+   document.write("</br>");
+ }
+</script>
+</body>
+</html>
+
+<!-- Output -->
+1
+22
+333
+4444
+55555
+
+<!-- 4.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=1;j<=i;j++) 
+     {
+ document.write(j);
+ }
+   document.write("</br>");
+ }
+</script>
+</body>
+</html>
+
+<!-- Output -->
+1
+12
+123
+1234
+12345
+
+<!-- 5.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=1;j<=i;j++) 
+     {
+      if((i+j)%2==0)
+       document.write("1");
+      else
+        document.write("0");
+ }
+   document.write("</br>");
+ }
+</script>
+</body></html>
+
+<!-- Output -->
+1
+01
+101
+0101
+10101
+
+<!-- 6.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=5;j>=i;j--) 
+     {
+        document.write(" &nbsp");
+    }
+     for(var j=1;j<=i;j++){
+        document.write(j);
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+
+<!-- Output -->
+     1
+    12
+   123
+  1234
+ 12345
+
+ <!-- 7.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+ var a=1;
+	for(var i=1;i<=4;i++){
+	  for(var j=4;j>=i;j--){
+        document.write(" &nbsp");
+    }
+	  for(var j=1;j<=a;j++){
+        document.write("*");
+     }
+     a+=2;
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+
+<!-- Output -->
+   *
+  ***
+ *****
+*******
+
+<!-- 8.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+	for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5-i;j++){
+        document.write(" &nbsp");
+     }
+     var n=i;
+	  for(var j=1;j<=i;j++){
+        document.write(n);
+       n++;
+     }
+      for(var j=2;j<=i;j++){
+        n--;
+        document.write(n-1);
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+    1
+   232
+  34543
+ 4567654
+567898765
+
+<!-- 9.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+	for(var i=1;i<=5;i++){
+	  for(var j=1;j<=i;j++){
+        document.write("*");
+     }
+   document.write("</br>");
+ } 
+ 	for(var i=1;i<=4;i++){
+	  for(var j=4;j>=i;j--){
+        document.write("*");
+     }
+   document.write("</br>");
+ } 
+
+</script>
+</body>
+</html>
+<!-- Output -->
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+<!-- 10.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+ var a=9;
+  for(var i=4;i>=1;i--){
+	  for(var j=4;j>i;j--){
+        document.write(" &nbsp");
+    }
+	  for(var j=1;j<=a;j++){
+        document.write("*");
+     }
+     a-=2;
+   document.write("</br>");
+ } 
+	for(var i=1;i<=5;i++){
+	  for(var j=5;j>i;j--){
+        document.write(" &nbsp");
+    }
+	  for(var j=1;j<=a;j++){
+        document.write("*");
+     }
+     a+=2;
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*********
+ *******
+  *****
+   ***
+    *
+   ***
+  *****
+ *******
+*********
+
+<!-- 11.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (i==1||j==1||i==5||j==5)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+*   *
+*   *
+*   *
+*****
+
+<!-- 12.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (i==1||j==1||i==5)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+*        
+*        
+*        
+*****
+
+<!-- 13.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (i==1||j==1||i==5||i==3)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+*        
+*****
+*        
+*****
+
+<!-- 14.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    var a=9
+     for(var j=1;j<=a;j++){
+      if(j+i==6||j-i==4||i==5)
+        document.write("*");
+      else
+      document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body></html>
+<!-- Output -->
+    *        
+   * *      
+  *   *    
+ *     *  
+*********
+ 
+<!-- 15.Input -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=5;i>=1;i--)
+   {
+    var a=9
+     for(var j=1;j<=a;j++){
+      if(j+i==6||j-i==4||i==5)
+        document.write("*");
+      else
+      document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body></html>
+<!-- Output -->
+*********
+ *     *  
+  *   *    
+   * *      
+    *        
+
+<!-- 16.Input -->
+<html lang="en">
+      <head>
+       <title>Document</title>
+      </head>
+      <body>
+       <script>
+         for(var j=1;j<=9;j++){
+            document.write(j);
+          }
+        document.write("</br>");
+        for(var i=4;i>=1;i--)
+         {
+          var a=9
+           for(var j=1;j<=a;j++){
+            if(j+i==6||j-i==4)
+              document.write("1");
+            else
+            document.write("&nbsp;&nbsp;");
+           }
+         document.write("</br>");
+       } 
+      </script>
+</body>
+</html>
+<!-- Output -->
+123456789
+ 1     1  
+  1   1    
+   1 1      
+    1        
+      
+<!-- 17.Input --> 
+    <html lang="en">
+      <head>
+       <title>Document</title>
+      </head>
+      <body>
+       <script>
+        for(var i=1;i<=9;i++)
+         {
+          for(var j=1;j<=9;j++){
+            if(j+i==10||j-i==0||i==9||i==1)
+              document.write("*");
+            else
+            document.write("&nbsp;&nbsp;");
+           }
+         document.write("</br>");
+       } 
+      </script>
+      </body></html>
+<!-- Output -->
+*********
+ *     *  
+  *   *    
+   * *      
+    *        
+   * *      
+  *   *    
+ *     *  
+*********
+ 
+<!-- 18.Input --> 
+<!-- <html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (j==1||i+j==6)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html> -->
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=9;i++)
+   {
+    for(var j=1;j<=9;j++){
+      if(j+i==6||j-i==4||i-j==4||j+i==14)
+        document.write("*");
+      else
+      document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body></html>
+<!-- Output -->
+    *        
+   * *      
+  *   *    
+ *     *  
+*       *
+ *     *  
+  *   *    
+   * *      
+    *
+
+<!-- 19.Input --> 
+<html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+  for(var i = 1; i <=5; i++){
+      for(var j = 1; j <= i + 4; j++){
+          if((i == 3&&j>2) ||  i + j == 6 || j == i + 4){
+              document.write('*');
+          }else{
+              document.write('&nbsp;&nbsp;');
+          }
+      }
+      document.write('<br />');
+  }
+  </script>
+  </body></html>
+<!-- Output -->
+    *
+   * *
+  *****
+ *     *
+*       *     
+
+<!-- 20.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (j==1||((i%2==1)&&j<5)||(i%2==0)&&j==5)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+****
+*   *
+****
+*   *
+****
+
+<!-- 21.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if ((j==1&&i>1&&i<5)||((i==1||i==5)&&j>1))
+        document.write("*");
+        else
+          document.write("&nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+ ****
+*   
+*
+*   
+ ****
+
+ <!-- 23.Input --> 
+ <html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+    for(var i = 1; i <=5; i++){
+      for(var j = 1; j <= 5; j++){
+          if(((i==1||i==5)&&j<=4)||((j==1||j==5)&&i>1&&i<5)){
+              document.write("*");
+          }else{
+              document.write(' &nbsp;');
+          }
+      }
+      document.write('<br />');
+  }
+  </script>
+  </body></html>
+    <!-- Output -->
+****   
+*   *
+*   *
+*   *
+****    
+<!-- 22.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (j==1||i%2==0)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+*   
+*****
+*   
+*****
+
+<!-- 23.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (i==1||j==1||i==3)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+*   
+*****
+*   
+*
+
+<!-- 24.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=7;j++){
+	      if ((j==1&&i>1&&i<5)||((i==1||i==5)&&j>1)||(j==7&&i>2&&i<5)||(i==3&&j>3))
+        document.write("*");
+        else
+          document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+ ******
+*
+*  ****
+*     *
+ ******
+
+<!-- 25.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (j==5||j==1||i==3)
+        document.write("*");
+        else
+          document.write(" &nbsp");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*   *
+*   *
+*****
+*   *
+*   *
+
+<!-- 26.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (j==3||i==1||i==5)
+        document.write("*");
+        else
+          document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+  *   
+  *
+  *   
+*****
+
+<!-- 27.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=5;j++){
+	      if (j==3||i==1||(i==5&&j<4)||(j==1&&i>3))
+        document.write("*");
+        else
+          document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+*****
+  *   
+  *
+* *   
+***
+
+<!-- 28.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=9;i++)
+   {
+    for(var j=1;j<=9;j++){
+      if(j+i==7||i-j==3||j==1)
+        document.write("*");
+      else
+      document.write("&nbsp;&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body></html>
+<!-- Output -->
+*      *
+*    *
+*  *
+**
+*  *
+*    *
+*       *
+
+<!-- 29.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++)
+   {
+    for(var j=1;j<=5;j++){
+      if(j==1||i==5)
+        document.write("*");
+      else
+      document.write("&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body></html>
+<!-- Output -->
+*    
+*    
+*    
+*    
+*****
+
+<!-- 30.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 5; j++){
+        if((j-i==0&&j<=3)||(i+j==6&&j>=3)||j==1||j==5){
+            document.write("*");
+        }else{
+            document.write('&nbsp;&nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+*   *
+** **
+* * *
+*   *
+*   *
+
+<!-- 31.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 5; j++){
+        if((j-i==0)||j==1||j==5){
+            document.write("*");
+        }else{
+            document.write('&nbsp;&nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+*   *
+**  *
+* * *
+*  **
+*   *
+
+<!-- 33.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=7;j++){
+	      if (((j==1||j==7)&&i>1&&i<5)||((i==1||i==5)&&j>1&&j<7))
+        document.write("*");
+        else
+          document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+  *****  
+*       *
+*       *
+*       *
+  *****  
+
+<!-- 34.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 4; j++){
+        if(j==1||(i==1||i==3)&&j<=3||j==4&&i==2){
+            document.write("*");
+        }else{
+            document.write('&nbsp;&nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+***  
+*  *
+***  
+*      
+*   
+
+<!-- 35.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=6; i++){
+    for(var j = 1; j <= 6; j++){
+        if(((j==1||j==5)&&i>1&&i<5)||(((i==1||i==5)&&j>1&&j<6)||i==j&&j>=4)){
+            document.write("*");
+        }else{
+            document.write(' &nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+ ****  
+*    *  
+*    *  
+*   **  
+ ****  
+     *
+
+<!-- 35.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 4; j++){
+        if(j==1||(i==1||i==3)&&j<=3||j==4&&i==2){
+            document.write("*");
+        }else{
+            document.write('&nbsp;&nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+***  
+*  *
+***  
+*  *     
+*   *
+
+<!-- 36.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i=1;i<=5;i++){
+	  for(var j=1;j<=6;j++){
+	      if ((i==2&&j==2)||((i%2==1)&&j>1&&j<6)||((i==4&&j==6)))
+        document.write("*");
+        else
+          document.write("&nbsp;&nbsp;");
+     }
+   document.write("</br>");
+ } 
+</script>
+</body>
+</html>
+<!-- Output -->
+ ****  
+*  
+ ****  
+     *     
+ ****
+
+ <!-- 37.Input --> 
+ <html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+    for(var i=1;i<=5;i++){
+      for(var j=1;j<=7;j++){
+          if (i==1||j==4)
+          document.write("*");
+          else
+            document.write("&nbsp;&nbsp;");
+       }
+     document.write("</br>");
+   } 
+  </script>
+  </body>
+  </html>
+    <!-- Output -->
+*******
+   *
+   *
+   *
+   *
+
+ <!-- 38.Input --> 
+ <html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+    for(var i=1;i<=4;i++){
+      for(var j=1;j<=7;j++){
+          if (((j==1||j==7)&&i<4)||((i==4)&&j>1&&j<7))
+          document.write("*");
+          else
+            document.write("&nbsp;&nbsp;");
+       }
+     document.write("</br>");
+   } 
+  </script>
+  </body>
+  </html>
+<!-- Output -->
+*     *
+*     *
+*     *
+ *****  
+
+ <!-- 39.Input --> 
+ <html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+    for(var i=1;i<=4;i++){
+      for(var j=1;j<=7;j++){
+          if (j+i==8||j-i==0)
+          document.write("*");
+          else
+            document.write("&nbsp;&nbsp;");
+       }
+     document.write("</br>");
+   } 
+  </script>
+  </body>
+  </html>
+<!-- Output -->
+*     *
+ *   *
+  * *
+   *  
+ <!-- 39.Input --> 
+ <html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+    for(var i=1;i<=4;i++){
+      for(var j=1;j<=7;j++){
+          if (j+i==8||j-i==0)
+          document.write("*");
+          else
+            document.write("&nbsp;&nbsp;");
+       }
+     document.write("</br>");
+   } 
+  </script>
+  </body>
+  </html>
+<!-- Output -->
+*     *
+ *   *
+  * *
+   *  
+
+ <!-- 40.Input --> 
+ <html lang="en">
+  <head>
+   <title>Document</title>
+  </head>
+  <body>
+   <script>
+    for(var i=1;i<=4;i++){
+      for(var j=1;j<=14;j++){
+          if (j+i==8||j-i==0||j==i+6||j+i==14)
+          document.write("*");
+          else
+            document.write("&nbsp;&nbsp;");
+       }
+     document.write("</br>");
+   } 
+  </script>
+  </body>
+  </html>
+  <!-- Output -->
+*     *     *  
+ *   * *   *    
+  * *   * *      
+   *     *     
+
+<!-- 41.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 5; j++){
+        if(j+i==6||j-i==0){
+            document.write("*");
+        }else{
+            document.write('&nbsp;&nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+*   *
+ * *  
+  *       
+ * *  
+*   *    
+<!-- 42.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 5; j++){
+        if((j+i==6&&j>3)||(j-i==0&&j<=3)||(j==3&&i>3)){
+            document.write("*");
+        }else{
+            document.write('&nbsp;&nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+*   *
+ * *  
+  *    
+  *    
+  *    
+
+<!-- 43.Input --> 
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+ <script>
+  for(var i = 1; i <=5; i++){
+    for(var j = 1; j <= 5; j++){
+        if((j+i==7)||i==1||i==5){
+            document.write(" *");
+        }else{
+            document.write(' &nbsp;');
+        }
+    }
+    document.write('<br />');
+}
+</script>
+</body></html>
+<!-- Output -->
+* * * * *
+      *
+    *  
+  *    
+* * * * *
